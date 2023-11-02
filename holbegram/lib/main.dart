@@ -4,10 +4,14 @@ import 'screens/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  print("Firebase initialized successfully");
+  try {
+    await Firebase.initializeApp();
+  } catch(e) {
+    print(e);
+  }
   runApp(MyApp());
 }
+
 
 
 class MyApp extends StatelessWidget {
