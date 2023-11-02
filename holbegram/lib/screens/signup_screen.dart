@@ -38,12 +38,11 @@ class _SignUpState extends State<SignUp> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-            // Your other widgets here...
             TextButton(
                 onPressed: () {
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()), // Navigating to Login Screen
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
                 );
                 },
                 child: Text('Log in'),
